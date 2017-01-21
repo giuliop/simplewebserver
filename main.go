@@ -9,7 +9,7 @@ import (
 )
 
 var port = flag.String("port", "8080", "port to use for http traffic (default is 8080)")
-var ssl = flag.Bool("ssl", true, "whether you want to listen for HTTPS traffic (default is true)")
+var ssl = flag.Bool("ssl", false, "whether you want to listen for HTTPS traffic (default is false)")
 var ssl_port = flag.String("ssl_port", "8443", "port to use for https traffic (default is 8443)")
 var ssl_cert = flag.String("ssl_cert", "ssl.crt", "file address of the ssl certificate (default is ssl.crt)")
 var ssl_key = flag.String("ssl_key", "ssl.key", "file address of the ssl private key (default is ssl.key)")
